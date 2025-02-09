@@ -3,3 +3,4 @@
 1739096728205	Move 'dao' to 'java'
 1739096832721	Move 'custom_exceptions' to 'mainPackage'
 1739096863289	Move 2 resources to 'mainPackage'
+1739104991191	Move 'index.jsp' to 'view'

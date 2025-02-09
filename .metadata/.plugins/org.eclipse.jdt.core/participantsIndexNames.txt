@@ -1,3 +1,5 @@
 INDEX VERSION 1.130
+G:\האחסון שלי\java-spotify-2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2049158898.index
+\spotify\src\main\java
 G:\האחסון שלי\java-spotify-2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1088245360.index
 \spotify\src\main\resources
