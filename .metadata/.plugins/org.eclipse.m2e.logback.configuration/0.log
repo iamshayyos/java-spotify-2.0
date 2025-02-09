@@ -705,3 +705,7 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2025-02-09 14:46:22,379 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2025-02-09 14:46:22,379 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1255 actually) to copy filtered resources, i.e. build is platform dependent!
 2025-02-09 14:46:22,443 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\האחסון שלי\java-spotify-2\spotify\src\test\resources
+2025-02-09 15:05:12,450 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1255 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-02-09 15:05:12,594 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-02-09 15:05:12,604 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1255 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-02-09 15:05:12,699 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\האחסון שלי\java-spotify-2\spotify\src\test\resources
