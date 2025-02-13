@@ -1,0 +1,21 @@
+package mainPackage.controllers;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Component
+public class HomeController {
+	
+	
+@GetMapping("/")
+public String deafult()
+{
+	return "redirect/:hello";
+}
+
+@GetMapping("/hello")
+public String helloWorld()
+{
+	return "index";
+}
+}

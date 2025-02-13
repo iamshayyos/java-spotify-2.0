@@ -1,5 +1,6 @@
 package mainPackage.dao;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import mainPackage.spotify.Song;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Repository
+@Component
 public class InMemorySongDao implements SongDao, Serializable {
     private static final long serialVersionUID = 1L;
     private final List<Song> songs = new ArrayList<>();
