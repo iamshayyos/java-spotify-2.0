@@ -11,25 +11,19 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<!-- Step 3: Add support for component scanning -->
+	<!-- Enable component scanning (change 'mainPackage' to your actual package) -->
 	<context:component-scan base-package="mainPackage" />
 
-	<!-- Step 4: Add support for conversion, formatting and validation support -->
+	<!-- Enable Spring MVC annotations (@Controller, @RequestMapping, etc.) -->
 	<mvc:annotation-driven/>
 	
-	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-	
+	<!-- Configure static resources handling -->
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
 
-	<!-- Step 5: Define Spring MVC view resolver -->
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<!-- Configure view resolver for JSP files -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 
 </beans>
-
-
-
-
-

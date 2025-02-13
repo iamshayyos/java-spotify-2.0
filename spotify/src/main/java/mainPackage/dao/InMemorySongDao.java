@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Component
+@Component	
 public class InMemorySongDao implements SongDao, Serializable {
     private static final long serialVersionUID = 1L;
     private final List<Song> songs = new ArrayList<>();

@@ -11,6 +11,9 @@ public class Song implements Serializable,Comparable<Song> {
     private String genre;
     private double length;
     
+    public Song() {
+        // Default constructor required for Spring MVC
+    }
 
     // брай
     public Song(String name, String artistName, String genre, double length) {

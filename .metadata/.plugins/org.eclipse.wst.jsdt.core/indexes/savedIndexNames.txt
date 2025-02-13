@@ -1,2 +1,8 @@
 INDEX VERSION 1.4+C:\Users\shayo\java-spotify-2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2049158898.index
+914688956.index
+2232769474.index
+1643240896.index
 323935446.index
+1520558855.index
+3530446205.index
