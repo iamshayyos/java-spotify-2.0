@@ -1,34 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
+
 <html>
 <head>
-    <title>Songs List</title>
+    <title>Song List</title>
 </head>
 <body>
-    <h2>All Songs</h2>
-    <a href="add">Add New Song</a>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Artist</th>
-            <th>Genre</th>
-            <th>Length</th>
-            <th>Actions</th>
-        </tr>
-        <c:forEach var="song" items="${songs}">
+    <h2>Song List</h2>
+    
+    <form action="${pageContext.request.contextPath}/songs/action" method="post">
+        <table border="1">
             <tr>
-                <td>${song.songID}</td>
-                <td>${song.name}</td>
-                <td>${song.artistName}</td>
-                <td>${song.genre}</td>
-                <td>${song.length}</td>
-                <td>
-                    <a href="edit/${song.songID}">Edit</a> |
-                    <a href="delete/${song.songID}">Delete</a>
-                </td>
+                <th>Select</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Length</th>
             </tr>
-        </c:forEach>
-    </table>
+
+            <c:forEach var="song" items="${songs}">
+                <tr>
+                    <td><input type="radio" name="selectedSongId" value="${song.songID}" /></td>
+                    <td>${song.songID}</td>
+                    <td>${song.name}</td>
+                    <td>${song.artistName}</td>
+                    <td>${song.genre}</td>
+                    <td>${song.length}</td>
+                </tr>
+            </c:forEach>
+        </table>
+
+        <input type="submit" name="action" value="Show" />
+        <input type="submit" name="action" value="Add" />
+        <input type="submit" name="action" value="Edit" />
+        <input type="submit" name="action" value="Delete" />
+    </form>
 </body>
 </html>

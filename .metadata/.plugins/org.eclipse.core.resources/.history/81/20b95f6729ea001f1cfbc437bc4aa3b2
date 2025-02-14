@@ -1,0 +1,39 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <title>Song List</title>
+</head>
+<body>
+    <h2>Song List</h2>
+    <form action="${pageContext.request.contextPath}/songs/action" method="post">
+        <table border="1">
+            <tr>
+                <th>Select</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Length</th>
+            </tr>
+
+            <c:forEach var="song" items="${songs}">
+                <tr>
+                    <td>
+                        <input type="radio" name="selectedSongId" value="${song.songID}" />
+                    </td>
+                    <td>${song.songID}</td>
+                    <td>${song.name}</td>
+                    <td>${song.artistName}</td>
+                    <td>${song.genre}</td>
+                    <td>${song.length}</td>
+                </tr>
+            </c:forEach>
+        </table>
+
+        <input type="submit" name="action" value="Show" />
+        <input type="submit" name="action" value="Add" />
+        <input type="submit" name="action" value="Edit" />
+        <input type="submit" name="action" value="Delete" />
+    </form>
+</body>
+</html>

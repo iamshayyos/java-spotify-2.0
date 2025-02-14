@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\shayo\java-spotify-2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\shayo\java-spotify-2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spotify" path="/spotify" reloadable="true" source="org.eclipse.jst.j2ee.server:spotify"/></Host>
+      <Context docBase="C:\Users\אופק חן\Documents\JavaProject\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\אופק חן\Documents\JavaProject\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spotify" path="/spotify" reloadable="true" source="org.eclipse.jst.j2ee.server:spotify"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,12 +1,9 @@
 package mainPackage.spotify;
 import mainPackage.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import mainPackage.custom_exceptions.*;
 import mainPackage.dao.*;
-
-
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
